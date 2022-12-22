@@ -1,0 +1,54 @@
+<head>
+	<title>Wisher time machine</title>
+</head>
+
+<body>
+	<div id="creator">
+		<h1>Wisher time machine</h1>
+		<!-- Pick a message with the radio buttons below -->
+		<span>Pick a Wish </span><br>
+		<input type="radio" name="cardType" id="type1" value="future" checked> FUTURE <br>
+		<input type="radio" name="cardType" id="type2" value="past"> PAST <br>
+		<input type="radio" name="cardType" id="type3" value="date"> DATE <br>
+		<input type="radio" name="cardType" id="type4" value="another world"> ANOTHER WORLD <br>
+
+		<br>
+		
+		<span>Will go now?</span>
+		<br>
+	 <input type="radio" id="YES" name="Will you go now" value="YES">
+  <label for="YES">YES</label>
+		<input type="radio" id="YES" name="Will you go now" value="YES">
+  <label for="YES">NO</label><br>
+		<br>
+		
+		<br><br>
+		
+		<span>What do you want to wish?</span><br>
+		<select name="fonts" id="fonts">
+			<option value="Birthday">Birthday</option>
+			<option value="Marriage day">Marriage day</option>
+			<option value="Other"> Other</option>
+			<span>If you choose other type in the box </span>
+			<input type="text" id="receiverTxt">
+		</select>
+		<br><br>
+		
+		<span>Pick a Date</span>
+		<br><br>
+		<input type="date" id="date">
+	
+		
+		<br><br>
+		
+		<!-- Make your card by clicking on this button -->
+		<button id="createBtn" onclick="makeCard()">Make a Wish</button>
+		<!----------------------------------------------->
+	</div>
+
+	<div id="card">
+		<span id="message"></span>
+		<br>
+		<span id="receiver"></span>
+	</div>
+</body>
